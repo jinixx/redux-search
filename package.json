@@ -18,6 +18,7 @@
     "clean:website": "rimraf build",
     "deploy": "gh-pages -d build",
     "lint": "eslint  --ext .js --ext .jsx source website",
+    "prepare": "npm run build",
     "start": "webpack-dev-server --hot --inline --config webpack.config.dev.js",
     "test": "babel-node node_modules/.bin/tape 'source/**/*.test.js' | tspec",
     "watch": "watch 'clear && npm run lint -s && npm run test -s' source"
