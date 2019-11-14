@@ -11,7 +11,7 @@ import {
  * If you use another location you must pass a custom :searchStateSelector to reduxSearch().
  */
 export default function searchReducer (state = {}, { payload, type } = {}) {
-  if (handlers.hasOwnProperty(type)) {
+  if (Object.prototype.hasOwnProperty.call(handlers, type)) {
     return handlers[type](state, payload)
   } else {
     return state

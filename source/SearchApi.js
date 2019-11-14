@@ -6,7 +6,6 @@ import Search from 'js-worker-search'
  * This class maps resource names to search indicies and manages subscribers.
  */
 export default class SubscribableSearchApi {
-
   /**
    * Constructor.
    */
@@ -86,7 +85,7 @@ export default class SubscribableSearchApi {
         })
       } else {
         for (var key in resources) {
-          let resource = resources[key]
+          const resource = resources[key]
           fieldNamesOrIndexFunction.forEach(field => {
             search.indexDocument(resource.id, resource[field] || '')
           })

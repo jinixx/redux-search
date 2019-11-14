@@ -48,7 +48,7 @@ function NavLink ({ pathData, text, url }) {
           className={styles.NavLinkIcon}
           viewBox='0 0 24 24'
         >
-          <path d={pathData}></path>
+          <path d={pathData} />
         </svg>
         {text}
       </a>

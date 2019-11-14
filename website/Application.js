@@ -37,7 +37,7 @@ export function Application ({
 }) {
   return (
     <div>
-      <Header/>
+      <Header />
       <CardWrapper>
         <Card>
           <p>
@@ -73,7 +73,7 @@ export function Application ({
               }
             }
             searchData={searchImmutableData}
-            title={'Immutable List of Maps'}
+            title='Immutable List of Maps'
           />
         </Card>
         <Card>
@@ -99,11 +99,11 @@ export function Application ({
               }
             }
             searchData={searchData}
-            title={'Array of Objects'}
+            title='Array of Objects'
           />
         </Card>
       </CardWrapper>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

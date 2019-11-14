@@ -12,11 +12,11 @@ import React from 'react'
 const store = createAppStore()
 
 render((
-    <div>
-      <Provider store={store}>
-        <Application/>
-      </Provider>
-    </div>
-  ),
-  document.getElementById('root')
+  <div>
+    <Provider store={store}>
+      <Application />
+    </Provider>
+  </div>
+),
+document.getElementById('root')
 )

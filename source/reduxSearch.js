@@ -55,13 +55,13 @@ export default function reduxSearch ({
 
     // Auto-index if a :resourceSelector has been provided
     if (resourceSelector) {
-      let currentResources = {}
+      const currentResources = {}
 
       store.subscribe(() => {
         const nextState = store.getState()
         const searchState = store[SEARCH_STATE_SELECTOR](nextState)
 
-        for (let resourceName in resourceIndexes) {
+        for (const resourceName in resourceIndexes) {
           const resource = resourceSelector(resourceName, nextState)
 
           // Only rebuild the search index for resources that have changed

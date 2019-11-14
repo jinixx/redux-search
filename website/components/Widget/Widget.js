@@ -34,8 +34,7 @@ export default function Widget ({
         {totalSize > 0 &&
           <small className={styles.ResultsSummary}>
             {filteredSize} of {totalSize}
-          </small>
-        }
+          </small>}
       </h2>
       <div className={styles.ControlBar}>
         <button

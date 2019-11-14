@@ -36,7 +36,7 @@ export const actions = {
       dispatch(actions.clearData())
       const data = {}
       for (var i = 0; i < 1000; i++) {
-        let id = faker.random.uuid()
+        const id = faker.random.uuid()
         data[id] = {
           id: id,
           name: faker.name.findName(),
@@ -55,7 +55,7 @@ export const actions = {
       dispatch(actions.clearImmutableData())
       const immutableMap = {}
       for (var i = 0; i < 1000; i++) {
-        let id = faker.random.uuid()
+        const id = faker.random.uuid()
         immutableMap[id] = new Record({
           id: id,
           name: faker.name.findName(),

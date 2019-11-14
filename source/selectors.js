@@ -90,4 +90,3 @@ export function getUnfilteredResultSelector ({
     return searchStateSelector(state)[resourceName].result
   }
 }
-

@@ -34,7 +34,7 @@ function intializeState ({
   result = [],
   text = 'brian'
 } = {}) {
-  let state = {
+  const state = {
     resources: { [resourceName]: resource },
     search: {}
   }
