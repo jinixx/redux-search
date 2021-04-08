@@ -1,6 +1,6 @@
 {
   "name": "redux-search",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Redux bindings for client-side search",
   "main": "dist/commonjs/index.js",
   "module": "dist/es/index.js",
